@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  jeu. 12 déc. 2019 à 22:20
+-- Généré le :  ven. 13 déc. 2019 à 19:51
 -- Version du serveur :  5.7.24
 -- Version de PHP :  7.2.14
 
@@ -33,7 +33,23 @@ USE `btp`;
 DROP TABLE IF EXISTS `anecdotes`;
 CREATE TABLE IF NOT EXISTS `anecdotes` (
   `id` int(255) NOT NULL AUTO_INCREMENT,
-  `text` varchar(190) NOT NULL,
+  `text` varchar(100) NOT NULL,
+  `ip` varchar(25) NOT NULL,
+  `date` int(255) NOT NULL,
+  `user` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `mode`
+--
+
+DROP TABLE IF EXISTS `mode`;
+CREATE TABLE IF NOT EXISTS `mode` (
+  `id` int(255) NOT NULL AUTO_INCREMENT,
+  `text` varchar(100) NOT NULL,
   `ip` varchar(25) NOT NULL,
   `date` int(255) NOT NULL,
   `user` varchar(255) NOT NULL,

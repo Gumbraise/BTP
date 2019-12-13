@@ -4,7 +4,7 @@ Projet Open-Source. Mini réseau social
 
 ## Requiert
 
-Un serveur Apache >= 2.4<br>
+Apache >= 2.4<br>
 PHP >= 7.1<br>
 MySQL >= 5.7<br>
 phpMyAdmin >= 4.8<br>

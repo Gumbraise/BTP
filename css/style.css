@@ -28,15 +28,29 @@ html {
     background-color: #222;
     font-family: btp
 }
-.fil {
-    width: 550px;
-    height: 100%;
-    margin: auto;
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    top: 100px
+@media (min-width: 550px) {
+    .fil {
+        width: 550px;
+        height: 100%;
+        margin: auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        top: 100px
+    }
+}
+@media (max-width: 550px) {
+    .fil {
+        width: 95%;
+        height: 100%;
+        margin: auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        top: 100px
+    }
 }
 header {
     position: relative;
